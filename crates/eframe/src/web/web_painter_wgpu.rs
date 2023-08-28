@@ -251,6 +251,8 @@ impl WebPainter for WebPainterWgpu {
                         }
                     }),
                     label: Some("egui_render"),
+                    occlusion_query_set: None,
+                    timestamp_writes: None,
                 });
 
                 renderer.render(&mut render_pass, clipped_primitives, &screen_descriptor);

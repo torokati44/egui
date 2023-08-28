@@ -108,6 +108,7 @@ impl Painter {
         let instance = wgpu::Instance::new(wgpu::InstanceDescriptor {
             backends: configuration.supported_backends,
             dx12_shader_compiler: Default::default(),
+            gles_minor_version: Default::default(),
         });
 
         Self {
@@ -552,6 +553,8 @@ impl Painter {
                     }
                 }),
                 label: Some("egui_render"),
+                occlusion_query_set: None,
+                timestamp_writes: None,
             });
 
             renderer.render(&mut render_pass, clipped_primitives, &screen_descriptor);
