@@ -315,6 +315,8 @@ zero_sized_map_values = "warn"
 # single_option_map = "warn"
 # unnecessary_debug_formatting = "warn"
 
+collapsible_if = "allow"
+manual_is_multiple_of = "allow"
 
 # TODO(emilk): maybe enable more of these lints?
 comparison_chain = "allow"
