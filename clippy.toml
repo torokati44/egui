@@ -23,7 +23,7 @@ type-complexity-threshold = 350
 
 # https://rust-lang.github.io/rust-clippy/master/index.html#disallowed_macros
 disallowed-macros = [
-    'dbg',
+    'std::dbg',
     'std::unimplemented',
 
     # TODO(emilk): consider forbidding these to encourage the use of proper log stream, and then explicitly allow legitimate uses
